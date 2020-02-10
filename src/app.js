@@ -11,6 +11,7 @@ const searchRouter = require('./routes/search');
 
 
 const app = express()
+app.use(cors());
 
 const morganOption = (NODE_ENV === 'production')
     ? 'tiny'
